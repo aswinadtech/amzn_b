@@ -620,10 +620,10 @@ public static boolean createXMLFileForCharlesSessionFile() throws Exception {
 		// File("/Users/narasimhanukala/git/ads-automation/ios_Smoke_Automation/ArchivedSessions/charles202002212053.chlsx");
 		// File outfile = new
 		// File("/Users/narasimhanukala/git/ads-automation/ios_Smoke_Automation/charles/myoutputFile.xml");
-		outfile = new File(System.getProperty("user.dir") + "/myoutputFile.xml");
+		CharlesFunctions.outfile= new File(System.getProperty("user.dir") + "/myoutputFile.xml");
 
 		instream = new FileInputStream(infile);
-		outstream = new FileOutputStream(outfile);
+		outstream = new FileOutputStream(CharlesFunctions.outfile);
 
 		byte[] buffer = new byte[1024];
 
